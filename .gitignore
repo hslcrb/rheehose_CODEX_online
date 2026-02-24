@@ -1,0 +1,4 @@
+.gitex/
+gitex
+*.o
+sample.xml
