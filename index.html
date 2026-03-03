@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ralph IDE</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <h1>Ralph IDE</h1>
+        <p>에이전트 중심 개발을 위한 경량 IDE / Lightweight IDE for agentic development</p>
+      </div>
+      <div class="mode-switch">
+        <label for="modeSelect">실행 모드 / Execution Mode</label>
+        <select id="modeSelect">
+          <option value="fast">Fast Mode (기본 / default)</option>
+          <option value="planning">Planning (SDD)</option>
+          <option value="spec">Spec-Driven (SDD)</option>
+        </select>
+      </div>
+    </header>
+
+    <main>
+      <aside class="panel left-panel">
+        <section>
+          <h2>모델 설정 / Model Configuration</h2>
+          <label>
+            공급자 / Provider
+            <select id="providerSelect">
+              <option value="ollama">Ollama (Local)</option>
+              <option value="lmstudio">LM Studio (Local)</option>
+              <option value="cloud">Cloud API</option>
+            </select>
+          </label>
+          <label>
+            엔드포인트 / Endpoint
+            <input id="endpointInput" placeholder="http://localhost:11434 or https://api.example.com" />
+          </label>
+          <label>
+            모델 이름 / Model Name
+            <input id="modelInput" placeholder="llama3.1 / gpt-4.1 / custom-model" />
+          </label>
+          <label>
+            API 키 / API Key
+            <input id="apiKeyInput" type="password" placeholder="Cloud provider key" />
+          </label>
+          <button id="saveModelConfig">모델 저장 / Save Model Config</button>
+          <pre id="modelStatus"></pre>
+        </section>
+
+        <section>
+          <h2>확장 기능 / Extensions</h2>
+          <label>
+            Open VSX Registry URL
+            <input id="openVsxUrl" value="https://open-vsx.org/api" />
+          </label>
+          <label>
+            확장 검색어 / Search Query
+            <input id="extensionQuery" placeholder="python" />
+          </label>
+          <button id="searchExtensions">Open VSX 검색 / Search Open VSX</button>
+          <ul id="extensionResults"></ul>
+          <label>
+            VSIX 파일 가져오기 / Import VSIX file
+            <input id="vsixInput" type="file" accept=".vsix" />
+          </label>
+          <button id="importVsix">직접 설치 / Direct Install</button>
+          <ul id="localExtensions"></ul>
+        </section>
+      </aside>
+
+      <section class="editor-area">
+        <div class="tabs">
+          <button data-tab="editor" class="active">코드 / Code</button>
+          <button data-tab="markdown">마크다운 / Markdown</button>
+          <button data-tab="pdf">PDF</button>
+        </div>
+
+        <div id="editorTab" class="tab-content active">
+          <textarea id="codeEditor" spellcheck="false">// 코드 편집기 / Code editor
+// 모든 주석은 한국어와 영어를 함께 제공합니다.
+// All comments are provided in both Korean and English.
+
+function helloRalphIDE() {
+  return "안녕하세요 Ralph IDE / Hello Ralph IDE";
+}
+</textarea>
+        </div>
+
+        <div id="markdownTab" class="tab-content">
+          <textarea id="markdownInput" placeholder="# 제목 / Title"></textarea>
+          <article id="markdownOutput"></article>
+        </div>
+
+        <div id="pdfTab" class="tab-content">
+          <input id="pdfInput" type="file" accept="application/pdf" />
+          <iframe id="pdfFrame" title="PDF Preview"></iframe>
+        </div>
+      </section>
+
+      <aside class="panel right-panel">
+        <section>
+          <h2>Ralph Loops (내장 / Built-in)</h2>
+          <p>
+            Ralph Loops는 확장이 아닌 코어 기능으로 내장되어 있습니다.
+            / Ralph Loops are integrated as a core feature, not an extension.
+          </p>
+          <label>
+            반복 횟수 / Iteration Count
+            <input id="loopCount" type="number" min="1" value="3" />
+          </label>
+          <label>
+            무한 반복 / Infinite Loop
+            <input id="infiniteLoop" type="checkbox" />
+          </label>
+          <button id="startLoop">루프 시작 / Start Loop</button>
+          <button id="stopLoop">루프 중지 / Stop Loop</button>
+          <pre id="loopLog"></pre>
+        </section>
+      </aside>
+    </main>
+
+    <footer>
+      <small>
+        Apache-2.0 Licensed. NOTICE와 CONTRIBUTING 문서를 확인하세요.
+        / Apache-2.0 Licensed. See NOTICE and CONTRIBUTING documents.
+      </small>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

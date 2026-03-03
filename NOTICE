@@ -1,0 +1,52 @@
+Ralph IDE Notices
+=================
+
+한국어 안내:
+본 제품은 Apache License 2.0을 따르며, 아래 고지에는 프로젝트 고유 고지 및 외부 소프트웨어 관련 고지가 포함됩니다.
+
+English Notice:
+This product is distributed under the Apache License 2.0, and the notice below includes project-specific notices and external software notices.
+
+1) Project Notice / 프로젝트 고지
+---------------------------------
+한국어:
+- 프로젝트명: Ralph IDE
+- 저작권: Copyright (c) 2026 Ralph IDE Contributors
+- 본 소프트웨어는 "있는 그대로(AS IS)" 제공되며, 명시적/묵시적 보증 없이 배포됩니다.
+- 본 프로젝트는 에이전트 기반 개발 생산성 향상을 위한 실험적/프로토타입 구현을 포함할 수 있습니다.
+
+English:
+- Project Name: Ralph IDE
+- Copyright: Copyright (c) 2026 Ralph IDE Contributors
+- This software is provided on an "AS IS" basis, without warranties or conditions of any kind.
+- The project may include experimental/prototype implementations for agentic development productivity.
+
+2) External Software Notices / 외부 소프트웨어 고지
+---------------------------------------------------
+한국어:
+- Open VSX Registry 연동:
+  본 프로젝트는 Open VSX Registry API와 상호운용될 수 있도록 UI를 제공합니다.
+  Open VSX 서비스 자체의 이용 약관/정책/라이선스는 해당 서비스 제공자의 문서를 따릅니다.
+- 브라우저 내장 기능 사용:
+  PDF 렌더링은 브라우저의 기본 PDF 처리 기능(내장 뷰어)을 활용합니다.
+  해당 렌더링 동작은 사용자가 실행하는 브라우저 구현 및 정책에 영향을 받을 수 있습니다.
+
+English:
+- Open VSX Registry integration:
+  This project provides a UI capable of interoperating with the Open VSX Registry API.
+  Terms, policies, and licensing of the Open VSX service itself are governed by the service provider's documentation.
+- Browser built-ins:
+  PDF rendering uses browser-native PDF handling (built-in viewer).
+  Rendering behavior can vary depending on browser implementation and policy.
+
+3) Attribution Maintenance / 고지 유지관리
+-------------------------------------------
+한국어:
+- 새로운 외부 라이브러리, SDK, 폰트, 아이콘, 코드 스니펫을 포함할 경우,
+  해당 저작권, 라이선스, 고지 의무를 확인하고 본 NOTICE를 즉시 갱신해야 합니다.
+- 재배포 시 본 NOTICE 파일을 함께 제공해야 합니다.
+
+English:
+- If new third-party libraries, SDKs, fonts, icons, or code snippets are added,
+  verify copyright, license, and notice obligations and update this NOTICE promptly.
+- This NOTICE file must be included in redistributions.
