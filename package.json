@@ -1,0 +1,11 @@
+{
+  "name": "ralph-ide-blueprint",
+  "version": "0.1.0",
+  "private": true,
+  "description": "VS Code-like agentic AI IDE blueprint with built-in Markdown/PDF rendering and Ralph Loops.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.js"
+  }
+}

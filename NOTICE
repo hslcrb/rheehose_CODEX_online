@@ -1,0 +1,54 @@
+Ralph IDE / 랄프 IDE
+Copyright 2026 Ralph IDE Contributors
+
+이 NOTICE 파일은 Apache License 2.0의 고지 요구 사항을 충족하기 위해 제공됩니다.
+This NOTICE file is provided to satisfy attribution requirements under Apache License 2.0.
+
+1) 프로젝트 고지 / Project Notice
+- 본 프로젝트는 Apache License 2.0에 따라 배포됩니다.
+  This project is distributed under Apache License 2.0.
+- 라이선스 전문은 LICENSE 파일을 참조하십시오.
+  See the LICENSE file for the full license text.
+
+2) 외부 소프트웨어 고지 / External Software Notices
+- Open VSX Registry
+  - 웹사이트 / Website: https://open-vsx.org
+  - 용도 / Purpose: 확장 메타데이터 검색 및 확장 생태계 연동.
+    Metadata discovery and extension ecosystem integration.
+  - 비고 / Notes: Open VSX 이용 시 해당 서비스의 이용약관과 정책을 따라야 합니다.
+    When using Open VSX, users must comply with its terms and policies.
+
+- Visual Studio Code (호환 목표 / compatibility target)
+  - 웹사이트 / Website: https://code.visualstudio.com
+  - 비고 / Notes: "Visual Studio Code" 및 관련 명칭은 Microsoft의 상표일 수 있습니다.
+    "Visual Studio Code" and related marks may be trademarks of Microsoft.
+  - 본 프로젝트는 VS Code와 유사한 사용자 경험을 목표로 하지만, Microsoft의 공식 제품이 아닙니다.
+    This project targets a VS Code-like experience but is not an official Microsoft product.
+
+- PDF.js (통합 렌더링 경로 후보 / optional integrated rendering path)
+  - 웹사이트 / Website: https://mozilla.github.io/pdf.js/
+  - 라이선스 / License: Apache License 2.0
+  - 용도 / Purpose: PDF 렌더링 경로(네이티브 렌더링 대안 포함).
+    PDF rendering pathway (alongside native rendering alternatives).
+
+- Ollama
+  - 웹사이트 / Website: https://ollama.com
+  - 용도 / Purpose: 로컬 LLM 실행 및 연동.
+    Local LLM execution and integration.
+
+- LM Studio
+  - 웹사이트 / Website: https://lmstudio.ai
+  - 용도 / Purpose: 로컬 LLM 실행 및 연동.
+    Local LLM execution and integration.
+
+3) 상표 및 책임 한계 / Trademarks and Liability
+- 외부 제품명, 서비스명, 상표는 각 소유자에게 귀속됩니다.
+  External product names, service names, and trademarks belong to their respective owners.
+- 본 프로젝트는 외부 서비스의 가용성, 정책 변경, API 호환성에 대해 보증하지 않습니다.
+  This project does not guarantee availability, policy stability, or API compatibility of external services.
+
+4) NOTICE 갱신 정책 / NOTICE Update Policy
+- 외부 의존성, 배포 번들, 고지 의무가 변경되면 NOTICE를 즉시 갱신해야 합니다.
+  NOTICE must be updated promptly whenever dependencies, bundles, or notice obligations change.
+- 배포물에 포함되는 제3자 코드가 늘어날 경우, 해당 라이선스와 고지를 추가해야 합니다.
+  When additional third-party code is distributed, corresponding licenses and notices must be added.
