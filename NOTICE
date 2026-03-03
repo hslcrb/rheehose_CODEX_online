@@ -1,0 +1,52 @@
+Ralph IDE
+Copyright (c) 2026 Ralph IDE Contributors
+
+이 제품에는 오픈소스 소프트웨어 정보와 고지 의무를 충족하기 위한 통지 내용이 포함됩니다.
+This product includes notices to satisfy open-source software attribution and legal obligations.
+
+1) 프로젝트 라이선스 / Project License
+- 본 프로젝트는 Apache License 2.0 하에 배포됩니다.
+- This project is distributed under the Apache License 2.0.
+
+2) 외부 소프트웨어 고지 / External Software Notices
+다음 외부 서비스/표준/형식을 참조하거나 연동합니다.
+The following external services/standards/formats are referenced or integrated.
+
+A. Open VSX Registry
+- 용도(한국어): 확장 검색 및 메타데이터 조회를 위한 확장 레지스트리 API 연동.
+- Purpose (English): Extension registry API integration for extension discovery and metadata lookup.
+- 웹사이트 / Website: https://open-vsx.org
+- 상표 고지 / Trademark notice: “Open VSX”는 해당 권리자에게 권리가 있을 수 있습니다.
+  “Open VSX” may be a trademark of its respective owner.
+
+B. Ollama
+- 용도(한국어): 로컬 LLM 모델 실행 엔드포인트로 사용 가능.
+- Purpose (English): May be used as a local LLM runtime endpoint.
+- 웹사이트 / Website: https://ollama.com
+- 상표 고지 / Trademark notice: “Ollama”는 해당 권리자에게 권리가 있을 수 있습니다.
+  “Ollama” may be a trademark of its respective owner.
+
+C. LM Studio
+- 용도(한국어): 로컬 LLM 제공자 중 하나로 설정 가능.
+- Purpose (English): Configurable as one of the local LLM providers.
+- 웹사이트 / Website: https://lmstudio.ai
+- 상표 고지 / Trademark notice: “LM Studio”는 해당 권리자에게 권리가 있을 수 있습니다.
+  “LM Studio” may be a trademark of its respective owner.
+
+D. PDF 포맷 및 브라우저 렌더링 / PDF format and browser rendering
+- 용도(한국어): 브라우저 내장 뷰어를 통해 PDF 문서를 표시.
+- Purpose (English): Displays PDF documents using browser-native rendering.
+- 주의 / Note: PDF 사양은 ISO 표준 및 관련 구현에 의해 정의됩니다.
+  PDF behavior depends on browser engine implementations and relevant standards.
+
+3) 책임 제한 / Disclaimer
+- 본 소프트웨어는 “있는 그대로(AS IS)” 제공되며, 명시적/묵시적 보증이 없습니다.
+- This software is provided on an “AS IS” basis, without warranties of any kind.
+
+4) NOTICE 업데이트 정책 / NOTICE Update Policy
+- 외부 라이브러리, 서비스, 리소스가 추가되면 본 NOTICE를 즉시 갱신해야 합니다.
+- When external libraries/services/resources are added, this NOTICE must be updated promptly.
+
+5) 기여자 의무 / Contributor Obligation
+- 기여자는 제3자 코드/자산을 도입할 때 라이선스와 고지 의무를 검토하고 PR에 명시해야 합니다.
+- Contributors must review license/notice obligations for third-party code/assets and document them in PRs.
