@@ -1,0 +1,72 @@
+Ralph IDE - NOTICE / 고지
+
+본 NOTICE 파일은 Apache License 2.0의 Section 4(d)에 따라 제공됩니다.
+This NOTICE file is provided in accordance with Section 4(d) of the Apache License 2.0.
+
+1) 프로젝트 식별 / Project Identification
+- 프로젝트명: Ralph IDE
+- Project Name: Ralph IDE
+- 설명: 에이전트 중심 AI 개발을 위한 VS Code 유사 IDE 프로토타입
+- Description: VS Code-like IDE prototype for agentic AI-driven development
+
+2) 저작권 고지 / Copyright Notice
+- Copyright (c) 2026 Ralph IDE Contributors
+
+3) 외부 소프트웨어 고지 / External Software Notices
+아래 항목은 본 프로젝트에서 사용하거나 연동 대상으로 명시된 외부 소프트웨어입니다.
+The following items are external software used by or integrated with this project.
+
+A. Marked (Markdown parser)
+- 용도 / Purpose: 브라우저 내장 Markdown 미리보기 렌더링
+  / Browser-side Markdown preview rendering
+- 라이선스 / License: MIT License
+- 웹사이트 / Website: https://github.com/markedjs/marked
+- 통합 방식 / Integration: CDN script include
+- 고지 / Notice: 해당 소프트웨어의 저작권 및 라이선스는 원 저작권자에게 귀속됩니다.
+  / Copyright and license remain with original copyright holders.
+
+B. Open VSX Registry API
+- 용도 / Purpose: 확장 검색 및 확장 메타데이터 조회
+  / Extension search and metadata lookup
+- 웹사이트 / Website: https://open-vsx.org
+- 고지 / Notice: Open VSX는 Eclipse Foundation 생태계의 오픈 확장 레지스트리입니다.
+  본 프로젝트는 API를 호출하며, 각 확장 패키지의 라이선스는 해당 확장 저작권자에게 귀속됩니다.
+  / Open VSX is an open extension registry in the Eclipse Foundation ecosystem.
+  This project calls its API; each extension package remains under its own license and ownership.
+
+C. Ollama
+- 용도 / Purpose: 로컬 LLM 제공자 연결 옵션
+  / Local LLM provider option
+- 웹사이트 / Website: https://ollama.com
+- 고지 / Notice: 모델/런타임 라이선스 및 사용 조건은 Ollama 및 해당 모델 배포자의 정책을 따릅니다.
+  / Model/runtime licensing and usage terms are governed by Ollama and model publishers.
+
+D. LM Studio
+- 용도 / Purpose: 로컬 LLM 제공자 연결 옵션
+  / Local LLM provider option
+- 웹사이트 / Website: https://lmstudio.ai
+- 고지 / Notice: 라이선스/배포 조건은 LM Studio 및 연동 모델의 정책을 따릅니다.
+  / Licensing/distribution terms follow LM Studio and connected model policies.
+
+E. OpenAI API / Anthropic API / Custom API Endpoints
+- 용도 / Purpose: API 키 기반 클라우드 LLM 제공자 연결
+  / API key-based cloud LLM connectivity
+- 고지 / Notice: 각 제공자의 서비스 약관, 데이터 처리 정책, 요금 정책을 준수해야 합니다.
+  / You must comply with each provider's terms, data policies, and billing rules.
+
+4) 상표 고지 / Trademark Notice
+- VS Code, OpenAI, Anthropic, Ollama, LM Studio 및 기타 명칭은 각 권리자의 상표 또는 등록상표일 수 있습니다.
+- VS Code, OpenAI, Anthropic, Ollama, LM Studio, and other names may be trademarks of their respective owners.
+
+5) 보증 및 책임 제한 안내 / Warranty and Liability Reminder
+- 본 프로젝트는 "있는 그대로(AS IS)" 제공되며, 명시적/묵시적 보증을 제공하지 않습니다.
+- This project is provided on an "AS IS" basis without express or implied warranties.
+
+6) 기여자 귀속 및 변경 고지 / Contributor Attribution and Change Notice
+- 파생 배포물은 수정 파일 및 추가 고지를 명확히 표기해야 합니다.
+- Derivative distributions must clearly mark modified files and additional attributions.
+
+7) NOTICE 유지 원칙 / NOTICE Maintenance Policy
+- 외부 라이브러리/서비스 추가 시 본 NOTICE에 항목을 반드시 갱신해야 합니다.
+- Update this NOTICE whenever external libraries/services are added.
+

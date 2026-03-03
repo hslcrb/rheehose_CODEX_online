@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ralph IDE / 랄프 IDE</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">Ralph IDE</div>
+      <div class="mode-group">
+        <label for="workMode">작업 모드 / Work Mode</label>
+        <select id="workMode">
+          <option value="fast" selected>Fast 모드 / Fast Mode</option>
+          <option value="planning">Planning 모드 / Planning Mode</option>
+          <option value="sdd">Spec-Driven Development 모드 / SDD Mode</option>
+        </select>
+      </div>
+      <button id="runLoopBtn">Ralph Loop 실행 / Run Ralph Loop</button>
+    </header>
+
+    <main class="layout">
+      <aside class="sidebar">
+        <section>
+          <h2>모델 설정 / Model Setup</h2>
+          <label>공급자 / Provider</label>
+          <select id="providerSelect">
+            <option value="ollama">Ollama (로컬 / Local)</option>
+            <option value="lmstudio">LM Studio (로컬 / Local)</option>
+            <option value="openai">OpenAI API (클라우드 / Cloud)</option>
+            <option value="anthropic">Anthropic API (클라우드 / Cloud)</option>
+            <option value="custom">Custom API (클라우드 / Cloud)</option>
+          </select>
+          <label>엔드포인트 / Endpoint</label>
+          <input id="endpointInput" placeholder="http://localhost:11434 or https://api.example.com" />
+          <label>API 키 / API Key</label>
+          <input id="apiKeyInput" type="password" placeholder="필요한 경우 입력 / Enter when required" />
+          <button id="saveModelBtn">저장 / Save</button>
+        </section>
+
+        <section>
+          <h2>Ralph Loops</h2>
+          <label>반복 횟수 / Iterations</label>
+          <input id="loopCountInput" type="number" min="0" value="3" />
+          <label class="checkbox">
+            <input id="infiniteLoopCheck" type="checkbox" />
+            무한 반복 / Infinite Loop
+          </label>
+          <p class="small">
+            루프 활성화 시 검사·감사·리뷰 단계를 강제합니다.
+            <br />
+            When enabled, each loop enforces inspect/audit/review checkpoints.
+          </p>
+        </section>
+
+        <section>
+          <h2>Open VSX & VSIX</h2>
+          <label>검색 / Search</label>
+          <input id="extSearchInput" placeholder="python, rust-analyzer ..." />
+          <button id="searchExtBtn">Open VSX 검색 / Search</button>
+          <label>직접 파일 가져오기 / Import VSIX</label>
+          <input id="vsixInput" type="file" accept=".vsix" />
+          <ul id="extensionList"></ul>
+        </section>
+      </aside>
+
+      <section class="editor-pane">
+        <div class="tabs">
+          <button class="tab active" data-view="codeView">코드 / Code</button>
+          <button class="tab" data-view="markdownView">Markdown</button>
+          <button class="tab" data-view="pdfView">PDF</button>
+        </div>
+
+        <div id="codeView" class="view active">
+          <textarea id="codeEditor" spellcheck="false">// 한국어: 에이전트 중심 개발을 위한 기본 편집기 예시입니다.
+// English: Starter editor for agentic AI-driven development.
+
+function hello() {
+  console.log("Ralph IDE ready");
+}
+</textarea>
+        </div>
+
+        <div id="markdownView" class="view">
+          <textarea id="markdownInput" class="half" spellcheck="false"># 내장 Markdown 렌더링 / Built-in Markdown Rendering
+
+- 확장 없이 Markdown 지원
+- Markdown support without extensions
+</textarea>
+          <article id="markdownPreview" class="half preview"></article>
+        </div>
+
+        <div id="pdfView" class="view">
+          <input id="pdfInput" type="file" accept="application/pdf" />
+          <iframe id="pdfFrame" title="PDF Preview"></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer id="statusBar">준비 완료 / Ready</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

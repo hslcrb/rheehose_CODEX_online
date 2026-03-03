@@ -1,0 +1,199 @@
+:root {
+  --bg: #111827;
+  --panel: #1f2937;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #3b82f6;
+  --border: #374151;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Segoe UI, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar,
+#statusBar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  background: #0b1220;
+  border-bottom: 1px solid var(--border);
+}
+
+#statusBar {
+  border-top: 1px solid var(--border);
+  border-bottom: none;
+  font-size: 0.9rem;
+}
+
+.brand {
+  font-weight: 700;
+  color: #93c5fd;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  flex: 1;
+  min-height: 0;
+}
+
+.sidebar {
+  border-right: 1px solid var(--border);
+  background: var(--panel);
+  padding: 12px;
+  overflow: auto;
+}
+
+.sidebar section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1rem;
+  margin: 0 0 10px;
+}
+
+label {
+  display: block;
+  margin: 8px 0 4px;
+  font-size: 0.85rem;
+}
+
+input,
+select,
+button,
+textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #0f172a;
+  color: var(--text);
+  padding: 8px;
+}
+
+button {
+  cursor: pointer;
+  background: #1d4ed8;
+  border: none;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+.checkbox {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.checkbox input {
+  width: auto;
+}
+
+.editor-pane {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  border-bottom: 1px solid var(--border);
+  background: #111827;
+}
+
+.tab {
+  width: auto;
+  padding: 6px 12px;
+  background: #1f2937;
+}
+
+.tab.active {
+  background: var(--accent);
+}
+
+.view {
+  display: none;
+  flex: 1;
+  min-height: 0;
+}
+
+.view.active {
+  display: flex;
+}
+
+#codeEditor {
+  flex: 1;
+  border: none;
+  border-radius: 0;
+  resize: none;
+}
+
+#markdownView {
+  display: none;
+}
+
+#markdownView.active {
+  display: flex;
+}
+
+.half {
+  width: 50%;
+  height: 100%;
+  border: none;
+  border-radius: 0;
+  resize: none;
+}
+
+.preview {
+  padding: 12px;
+  overflow: auto;
+  border-left: 1px solid var(--border);
+}
+
+#pdfView {
+  flex-direction: column;
+}
+
+#pdfFrame {
+  flex: 1;
+  border: none;
+  margin-top: 8px;
+  background: #fff;
+}
+
+.small {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+#extensionList {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+}
+
+#extensionList li {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 0.85rem;
+  background: #111827;
+}
