@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ralph IDE</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>Ralph IDE</h1>
+      <div class="mode-switch">
+        <label for="fastMode">Fast Mode</label>
+        <input id="fastMode" type="checkbox" checked />
+      </div>
+    </header>
+
+    <main class="layout">
+      <aside class="panel files-panel">
+        <h2>Files</h2>
+        <div class="file-actions">
+          <input id="newFileName" type="text" placeholder="new-file.md" />
+          <button id="addFileBtn">Add</button>
+        </div>
+        <ul id="fileList"></ul>
+      </aside>
+
+      <section class="panel editor-panel">
+        <h2>Editor</h2>
+        <div class="editor-header">
+          <span id="activeFileName">No file selected</span>
+          <button id="saveBtn">Save Snapshot</button>
+        </div>
+        <textarea id="editor" spellcheck="false"></textarea>
+      </section>
+
+      <aside class="panel preview-panel">
+        <h2>Built-in Preview</h2>
+        <div class="tab-row">
+          <button class="tab active" data-tab="markdown">Markdown Preview</button>
+          <button class="tab" data-tab="pdf">PDF Viewer</button>
+        </div>
+        <section id="markdownTab" class="tab-content active">
+          <article id="markdownPreview"></article>
+        </section>
+        <section id="pdfTab" class="tab-content">
+          <input id="pdfInput" type="file" accept="application/pdf" />
+          <iframe id="pdfFrame" title="PDF Preview"></iframe>
+        </section>
+      </aside>
+    </main>
+
+    <section class="bottom-grid">
+      <article class="panel">
+        <h2>Open VSX + Local Extension Import</h2>
+        <div class="inline-row">
+          <input id="extensionQuery" type="text" placeholder="python" />
+          <button id="searchOpenVsxBtn">Search Open VSX</button>
+        </div>
+        <input id="extensionFile" type="file" accept=".vsix,.zip" />
+        <button id="importExtensionBtn">Import Extension File</button>
+        <ul id="extensionResults"></ul>
+      </article>
+
+      <article class="panel">
+        <h2>AI Models</h2>
+        <form id="modelForm">
+          <select id="providerType">
+            <option value="ollama">Ollama (Local)</option>
+            <option value="lmstudio">LM Studio (Local)</option>
+            <option value="cloud">Cloud API Key</option>
+          </select>
+          <input id="modelName" type="text" placeholder="model name" required />
+          <input id="endpoint" type="text" placeholder="endpoint (optional for cloud)" />
+          <input id="apiKey" type="password" placeholder="api key (cloud)" />
+          <button type="submit">Add Model</button>
+        </form>
+        <ul id="modelList"></ul>
+      </article>
+
+      <article class="panel">
+        <h2>Ralph Loops</h2>
+        <p>
+          inspection → auditing → review 루프를 반복 실행합니다. / Run repeated
+          inspection → auditing → review loops.
+        </p>
+        <div class="inline-row">
+          <input id="loopCount" type="text" placeholder="3 or infinite" />
+          <button id="startLoopBtn">Start</button>
+          <button id="stopLoopBtn">Stop</button>
+        </div>
+        <pre id="loopLog"></pre>
+      </article>
+    </section>
+
+    <script src="src/app.js"></script>
+  </body>
+</html>

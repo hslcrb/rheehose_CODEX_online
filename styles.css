@@ -1,0 +1,164 @@
+:root {
+  --bg: #1e1e1e;
+  --panel: #252526;
+  --text: #d4d4d4;
+  --muted: #9da0a8;
+  --accent: #0e639c;
+  --border: #3c3c3c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 260px 1fr 380px;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  min-height: 58vh;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.75rem;
+}
+
+h1,
+h2 {
+  margin: 0 0 0.5rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+.file-actions,
+.inline-row,
+.editor-header,
+.tab-row,
+.mode-switch {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+#fileList,
+#extensionResults,
+#modelList {
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0;
+  max-height: 170px;
+  overflow: auto;
+}
+
+#fileList li,
+#extensionResults li,
+#modelList li {
+  padding: 0.4rem;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+}
+
+#fileList li.active {
+  background: rgba(14, 99, 156, 0.35);
+}
+
+textarea,
+input,
+select,
+button {
+  width: 100%;
+  background: #1b1b1b;
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.45rem;
+}
+
+button {
+  width: auto;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--accent);
+}
+
+#editor {
+  min-height: 42vh;
+  width: 100%;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.tab {
+  opacity: 0.75;
+}
+
+.tab.active {
+  opacity: 1;
+  border-color: var(--accent);
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+#markdownPreview {
+  min-height: 36vh;
+  max-height: 45vh;
+  overflow: auto;
+  border: 1px solid var(--border);
+  padding: 0.75rem;
+}
+
+#pdfFrame {
+  width: 100%;
+  min-height: 40vh;
+  border: 1px solid var(--border);
+  margin-top: 0.5rem;
+}
+
+.bottom-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  padding: 0 0.75rem 0.75rem;
+}
+
+#modelForm {
+  display: grid;
+  gap: 0.5rem;
+}
+
+#loopLog {
+  min-height: 150px;
+  max-height: 230px;
+  overflow: auto;
+  border: 1px solid var(--border);
+  background: #101010;
+  padding: 0.5rem;
+  white-space: pre-wrap;
+}
